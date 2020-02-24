@@ -54,7 +54,7 @@ export const Header = () => {
         type="text"
         name="search"
         placeholder="Поиск"
-        iconUrl="/images/input-search-logo.png"
+        iconUrl="/react_avva-test-task/images/input-search-logo.png"
         inputHandler={setSearchQuery}
         logoClassName="header__input-search-logo"
       />
@@ -87,7 +87,7 @@ export const Header = () => {
       />
 
       <button className="header__notifications button">
-        <img src="/images/icon-notifications-bell.png" alt="" />
+        <img src="/react_avva-test-task/images/icon-notifications-bell.png" alt="" />
         <span className="header__notifications-quantity">
           {3}
         </span>

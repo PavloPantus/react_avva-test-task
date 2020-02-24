@@ -66,19 +66,19 @@ export const ActiveItem = ({ customClassName }) => {
           && (
             <div className="item__edit-menu edit-menu">
               <button className="edit-menu__button button">
-                <img src="/images/icon-printer.png" alt="" />
+                <img src="/react_avva-test-task/images/icon-printer.png" alt="" />
               </button>
 
               <button className="edit-menu__button button">
-                <img src="/images/icon-download.png" alt="" />
+                <img src="/react_avva-test-task/images/icon-download.png" alt="" />
               </button>
 
               <button className="edit-menu__button button">
-                <img src="/images/icon-edit.png" alt="" />
+                <img src="/react_avva-test-task/images/icon-edit.png" alt="" />
               </button>
 
               <button className="edit-menu__button button">
-                <img src="/images/icon-add.png" alt="" />
+                <img src="/react_avva-test-task/images/icon-add.png" alt="" />
               </button>
 
               <button className="edit-menu__cancel button">
