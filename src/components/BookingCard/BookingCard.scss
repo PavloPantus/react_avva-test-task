@@ -1,0 +1,64 @@
+.booking-card {
+  padding: 16px 15px 21px;
+  background-color: white;
+  width: 251px;
+  box-shadow: 0 4px 10px rgba(124, 124, 124, 0.2);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #3a3a3a;
+  font-family: "Myriad Pro";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+
+  &__close {
+    position: absolute;
+    background-image: url("/images/icon-close.png");
+    width: 7px;
+    height: 7px;
+    right: 21px;
+    top: 19px;
+  }
+
+
+  &__task-type {
+    color: #585858;
+    font-family: "Arial";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  &__over-booking {
+    /* Style for "Прямоуголь" */
+    padding: 3px 9px;
+    margin-left: 13px;
+    border-radius: 10px;
+    background-color: rgba(192, 48, 48, 0.3);
+    /* Style for "Овербукинг" */
+    color: #c03030;
+    font-family: "Myriad Pro";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  &__number {
+    margin-top: 9px;
+    color: #2b87c9;
+    font-family: "Myriad Pro";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  &__item-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9px;
+  }
+
+
+}

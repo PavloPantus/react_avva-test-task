@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Arial';
+  src: url(/fonts/fonts/'ArialMT.woff2') format('woff2'),
+  url(/fonts/fonts/'ArialMT.woff') format('woff'),
+  url(/fonts/fonts/'ArialMT.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url(/fonts/fonts/'MyriadPro-Black.woff2') format('woff2'),
+  url(/fonts/fonts/'MyriadPro-Black.woff') format('woff'),
+  url(/fonts/fonts/'MyriadPro-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(/fonts/fonts/'OpenSans-Semibold.woff2') format('woff2'),
+  url(/fonts/fonts/'OpenSans-Semibold.woff') format('woff'),
+  url(/fonts/fonts/'OpenSans-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+

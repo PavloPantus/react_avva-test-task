@@ -1,0 +1,50 @@
+.notifications {
+  padding: 23px 24px 130px;
+  box-shadow: 0 4px 10px rgba(124, 124, 124, 0.2);
+  border-radius: 5px;
+  background-color: #fff;
+  width: 278px;
+  flex-shrink: 0;
+
+  &__heading {
+    color: #20387d;
+    font-family: "Nunito";
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+
+  &__notification-container {
+    padding-right: 58px;
+    position: relative;
+    &:first-child {
+      margin-top: 27px;
+    }
+
+    &:not(:first-child) {
+      margin-top: 29px;
+    }
+
+  }
+
+  &__notification {
+    font-family: Nunito;
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  &__open-notification {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    position: absolute;
+    width: 19px;
+    height: 16px;
+    background-image: url("/images/icon-arrow-right.png");
+
+    &:hover {
+      background-color: rgba(68, 68, 68, 0.3);
+      border-radius: 50%;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.tasks-list {
+  margin-right: 18px;
+  margin-left: 18px;
+  display: flex;
+  overflow-x: scroll;
+  margin-top: 15px;
+
+  &__card {
+    flex-shrink: 0;
+    &:not(:first-child) {
+      margin-left: 4px;
+    }
+  }
+}

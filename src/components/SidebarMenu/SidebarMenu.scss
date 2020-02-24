@@ -1,0 +1,66 @@
+.sidebar {
+  width: 0px;
+  padding: 0px;
+  flex-shrink: 0;
+  transition: all 0.3s ease-in;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background-color: #2c3861;
+
+  &__top-container {
+    margin-top: 43px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__top-container &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & img {
+      margin-bottom: 10px;
+    }
+    &:not(:first-child) {
+      margin-top: 33px;
+    }
+  }
+
+  &__bottom-container {
+    /* Style for "Прямоуголь" */
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 152px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 19px;
+  }
+
+  &__bottom-container &__item {
+    &:not(:first-child) {
+      margin-top: 33px;
+    }
+  }
+
+}
+
+.sidebar-small_open {
+  padding-top: 16px;
+  padding-bottom: 25px;
+  width: 52px;
+}
+
+
+.sidebar-big_open {
+  padding-top: 16px;
+  padding-bottom: 25px;
+  width: 100px;
+}
+
+.sidebar_close {
+  width: 0px;
+}
