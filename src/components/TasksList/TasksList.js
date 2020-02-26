@@ -1,12 +1,9 @@
+/* eslint-disable no-shadow */
 import React from 'react';
 import './TasksList.scss';
 import { BookingCard } from '../BookingCard';
 
-export const TasksList = (
-  {
-
-  }
-) => {
+export const TasksList = () => {
   const task = {
     taskType: 'Бронь',
     taskNumber: '95959959',
@@ -55,6 +52,7 @@ export const TasksList = (
           .map(
             task => (
               <BookingCard
+                key={Math.random() * Math.random()}
                 className="tasks-list__card"
                 taskType={task.taskType}
                 taskNumber={task.taskNumber}

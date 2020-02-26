@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { useState } from 'react';
 import './App.scss';
 import classNames from 'classnames';
@@ -13,8 +12,6 @@ import { QuickAccesPages } from './components/QuickAccesPages';
 function App() {
   const [showSmallSidebar, setShowSmallSidebar] = useState(false);
   const [showBigSidebar, setShowBigSidebar] = useState(false);
-
-  console.log(showSmallSidebar);
 
   return (
     <Context.Provider

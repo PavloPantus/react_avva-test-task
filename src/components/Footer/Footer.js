@@ -7,11 +7,11 @@ export const Footer = () => (
       2020 .  Majex
     </span>
 
-    <a href="#" className="footer__support">
+    <a href="/" className="footer__support">
       Тех поддержка
     </a>
 
-    <a href="#" className="footer__studying">
+    <a href="/" className="footer__studying">
       Обучение
     </a>
   </footer>

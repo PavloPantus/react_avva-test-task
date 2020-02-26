@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import './DateTime.scss';
+import PropTypes from 'prop-types';
 
 export const DateTime = ({ className }) => {
-  const [time, setTime] = useState((new Date()).toLocaleTimeString().slice(0, 5));
-  const [date, setDate] = useState((new Date()).toLocaleDateString());
+  const [time, setTime] = useState(
+    (new Date()).toLocaleTimeString().slice(0, 5)
+  );
+
+  const [date, setDate] = useState(
+    (new Date()).toLocaleDateString()
+  );
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -24,4 +30,12 @@ export const DateTime = ({ className }) => {
       </span>
     </div>
   );
+};
+
+DateTime.propTypes = {
+  className: PropTypes.string,
+};
+
+DateTime.defaultProps = {
+  className: '',
 };

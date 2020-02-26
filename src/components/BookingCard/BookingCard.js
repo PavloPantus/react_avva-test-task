@@ -1,5 +1,6 @@
 import React from 'react';
 import './BookingCard.scss';
+import PropTypes from 'prop-types';
 
 export const BookingCard = (
   {
@@ -9,13 +10,14 @@ export const BookingCard = (
     customer,
     category,
     period,
+    // eslint-disable-next-line no-shadow
     status,
     className,
     overBooking,
   }
 ) => (
   <div className={`booking-card ${className}`}>
-    <button className="booking-card__close button" />
+    <button className="booking-card__close button" type="button" />
 
     <span className="booking-card__task-type">
       {taskType}
@@ -64,3 +66,20 @@ export const BookingCard = (
 
   </div>
 );
+
+BookingCard.propTypes = {
+  taskType: PropTypes.string.isRequired,
+  taskNumber: PropTypes.string.isRequired,
+  taskSource: PropTypes.string.isRequired,
+  customer: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
+  period: PropTypes.string.isRequired,
+  status: PropTypes.string.isRequired,
+  className: PropTypes.string,
+  overBooking: PropTypes.bool,
+};
+
+BookingCard.defaultProps = {
+  className: '',
+  overBooking: false,
+};

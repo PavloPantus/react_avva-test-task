@@ -1,5 +1,7 @@
+/* eslint-disable max-len */
 import React, { useContext } from 'react';
 import './ActiveItem.scss';
+import PropTypes from 'prop-types';
 import { Notifications } from '../Notifications';
 import { Context } from '../context';
 
@@ -65,27 +67,30 @@ export const ActiveItem = ({ customClassName }) => {
           (showBigSidebar || showSmallSidebar)
           && (
             <div className="item__edit-menu edit-menu">
-              <button className="edit-menu__button button">
+              <button
+                className="edit-menu__button button"
+                type="button"
+              >
                 <img src="/react_avva-test-task/images/icon-printer.png" alt="" />
               </button>
 
-              <button className="edit-menu__button button">
+              <button className="edit-menu__button button" type="button">
                 <img src="/react_avva-test-task/images/icon-download.png" alt="" />
               </button>
 
-              <button className="edit-menu__button button">
+              <button className="edit-menu__button button" type="button">
                 <img src="/react_avva-test-task/images/icon-edit.png" alt="" />
               </button>
 
-              <button className="edit-menu__button button">
+              <button className="edit-menu__button button" type="button">
                 <img src="/react_avva-test-task/images/icon-add.png" alt="" />
               </button>
 
-              <button className="edit-menu__cancel button">
+              <button className="edit-menu__cancel button" type="button">
                 Отмена
               </button>
 
-              <button className="edit-menu__save button">
+              <button className="edit-menu__save button" type="button">
                 Сохранить
               </button>
 
@@ -101,4 +106,12 @@ export const ActiveItem = ({ customClassName }) => {
       />
     </section>
   );
+};
+
+ActiveItem.propTypes = {
+  customClassName: PropTypes.string,
+};
+
+ActiveItem.defaultProps = {
+  customClassName: '',
 };

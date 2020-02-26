@@ -1,9 +1,12 @@
+/* eslint-disable */
 import React, { useRef } from 'react';
 import './Input.scss';
+import PropTypes from 'prop-types';
 
 export const Input = (
   {
     type,
+    // eslint-disable-next-line no-shadow
     name,
     containerClassName,
     placeholder,
@@ -19,7 +22,9 @@ export const Input = (
   };
 
   return (
+    // eslint-disable-next-line jsx-a11y/click-events-have-key-events
     <div
+      role="input"
       className={`${containerClassName} input`}
       onClick={handlecontainerClick}
     >
@@ -41,4 +46,22 @@ export const Input = (
       />
     </div>
   );
+};
+
+Input.propTypes = {
+  type: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  containerClassName: PropTypes.string.isRequired,
+  placeholder: PropTypes.string,
+  inputHandler: PropTypes.func.isRequired,
+  iconUrl: PropTypes.string,
+  inputClassName: PropTypes.string,
+  logoClassName: PropTypes.string,
+};
+
+Input.defaultProps = {
+  placeholder: '',
+  iconUrl: '',
+  inputClassName: '',
+  logoClassName: '',
 };
